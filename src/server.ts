@@ -6,6 +6,8 @@ import cors from 'cors';
 import path from 'path';
 import routes from './routes';
 
+const PORT = process.env.PORT || 3333;
+
 const startServer = async (): Promise<void> => {
   const app = express();
   const publicPath = path.resolve(__dirname, '..', 'public');
@@ -20,8 +22,8 @@ const startServer = async (): Promise<void> => {
   app.use(express.json());
   app.use(routes);
 
-  server.listen(3333, () => {
-    console.log('🚀 Server started on port 3333!');
+  server.listen(PORT, () => {
+    console.log('🚀 Server started on port', PORT);
   });
 };
 
