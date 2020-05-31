@@ -1,0 +1,55 @@
+<html>
+
+
+
+<head>
+  <title>TagoIO SpaceX</title>
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/global.css">
+  <link rel="stylesheet" href="/css/ships.css">
+</head>
+
+<body>
+  <!-- Image and text -->
+  <nav class="navbar navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <div>
+        <span style="font-size: 24px; color: #337ab7;">SpaceX</span>
+        <img src="/images/tago.png" width="50" class="d-inline-block align-top" alt="" loading="lazy">
+      </div>
+    </a>
+  </nav>
+
+
+  <div class="home-ship">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Image</th>
+          <th scope="col">Ship Name</th>
+          <th scope="col">Missions</th>
+          <th scope="col">Active</th>          
+        </tr>
+      </thead>
+      <tbody>
+        <% ships.forEach((item) => { %>
+        <tr>
+          <td><img src="<%= item.image %>" width="100"> </td>
+          <td><%= item.name %></td>
+          <td>
+            <% item.missions.forEach((mission) => {%>
+              <li><%= mission.name %></li>
+            <% }) %>
+          </td>
+          <td><%= item.active %></td>
+        </tr>
+        <% }) %>
+      </tbody>
+    </table>
+  </div>>
+
+</body>
+
+</html>
