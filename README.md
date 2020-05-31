@@ -6,6 +6,9 @@ obtendo os nomes das naves ativas e suas respectivas missões.
 
 ### Exemplo disponível em:
 
+Formatado em ejs: [https://tagoio-spacex.herokuapp.com/](https://tagoio-spacex.herokuapp.com/)
+
+Formatado json: [https://tagoio-spacex.herokuapp.com/json](https://tagoio-spacex.herokuapp.com/json)
 
 ## Tecnologias envolvidas
 
@@ -29,7 +32,8 @@ yarn start
 Após o start, verificar o resultado da api através da url:
 
 Formatado em ejs: [http://localhost:3333](http://localhost:3333)
-Formatado em json: [http://localhost:3333/json](http://localhost:3333/json)
+
+Formatado json: [http://localhost:3333/json](http://localhost:3333/json)
 
 ## Observação
 
